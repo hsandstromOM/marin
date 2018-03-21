@@ -18,6 +18,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
   font-family: "Futura-PT";
+  background-color: #001b52;
 }
 
 ol, ul {
@@ -68,13 +69,13 @@ img[alt=""] {
 }
 
 button:hover {
-  color: #fff;
-  opacity: .7;
+  color: #efbf1b;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #fff;
-  opacity: .7;
+  color: #efbf1b;
+  transition: all 0.3s ease;
 }
 
 /* Grid */
@@ -1344,12 +1345,11 @@ a , a:focus{
 
 a:hover {
   border-bottom-color: transparent;
-  color: #FFF;
   text-decoration: none;
 }
 
 a:active {
-  color: #53e3fb !important;
+  color: #efbf1b; !important;
 }
 
 strong, b {
@@ -1379,7 +1379,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 4em;
 }
 
 h2 {
@@ -1953,6 +1953,16 @@ ul.actions li {
   display: inline-block;
   padding: 0 1em 0 0;
   vertical-align: middle;
+  border: 5px solid #FFF;
+  transition: all 0.3s ease;
+}
+
+ul.actions li:hover {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+  border: 5px solid #efbf1b;
+  transition: all 0.3s ease;
 }
 
 ul.actions li:last-child {
@@ -2149,6 +2159,19 @@ table.alt tfoot {
 
 /* Button */
 
+.yellow {
+  background-color: #efbf1b !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.yellow:hover {
+  background-color: transparent !important;
+  color: #efbf1b !important;
+  -webkit-box-shadow: inset 0 0 0 2px #efbf1b !important;
+          box-shadow: inset 0 0 0 2px #efbf1b !important;
+  opacity:1 !important;
+}
+
 input[type="submit"], input[type="reset"], input[type="button"], button, .button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -2185,6 +2208,11 @@ input[type="submit"]:hover, input[type="submit"]:active, input[type="reset"]:hov
 			color: #9bf1ff; */
 }
 
+#menu input[type="submit"]:hover, input[type="submit"]:active, input[type="reset"]:hover, input[type="reset"]:active, input[type="button"]:hover, input[type="button"]:active, button:hover, button:active, .button:hover, .button:active {
+   box-shadow: inset 0 0 0 2px #efbf1b;
+			color: #efbf1b;
+}
+
 input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, button:active, .button:active {
   background-color: rgba(155, 241, 255, 0.1);
   -webkit-box-shadow: inset 0 0 0 2px #53e3fb;
@@ -2215,24 +2243,46 @@ input[type="submit"].big, input[type="reset"].big, input[type="button"].big, but
 input[type="submit"].next, input[type="reset"].next, input[type="button"].next, button.next, .button.next {
   padding-right: 4.5em;
   position: relative;
+  margin: 5px;
 }
 
-input[type="submit"].next:before, input[type="submit"].next:after, input[type="reset"].next:before, input[type="reset"].next:after, input[type="button"].next:before, input[type="button"].next:after, button.next:before, button.next:after, .button.next:before, .button.next:after {
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 36px 22px;
-  content: '';
+.button.next:hover {
+    transition: all 0.3s ease;
+}
+
+a.button.next:before {
   display: block;
-  height: 100%;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #FFF;
   position: absolute;
-  right: 0;
-  top: 0;
-  border-left: #FFF solid 2px;
-  vertical-align: middle;
-  width: 56px;
+  top: 50%;
+  margin-top: -1px;
+  right: 24px;
+  transition: all 0.3s ease;
+}
+
+a.button.next:hover:before {
+  background: #efbf1b;
+}
+
+a.button.next:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent #FFF;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 20px;
+  transition: all 0.3s ease;
+}
+
+a.button.next:hover:after {
+    border-color: transparent transparent transparent #efbf1b;
 }
 
 .white {
@@ -2240,13 +2290,9 @@ input[type="submit"].next:before, input[type="submit"].next:after, input[type="r
 }
 
 input[type="submit"].next:before, input[type="reset"].next:before, input[type="button"].next:before, button.next:before, .button.next:before {
-  background-image: url("../../images/Starburst.png");
 }
 
 input[type="submit"].next:after, input[type="reset"].next:after, input[type="button"].next:after, button.next:after, .button.next:after {
-  background-image: url("../../images/Starburst.png");
-  opacity: 0;
-  z-index: 1;
 }
 
 input[type="submit"].next:hover:after, input[type="submit"].next:active:after, input[type="reset"].next:hover:after, input[type="reset"].next:active:after, input[type="button"].next:hover:after, input[type="button"].next:active:after, button.next:hover:after, button.next:active:after, .button.next:hover:after, .button.next:active:after {
@@ -2401,11 +2447,18 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 }
 
 .tiles article:nth-child(6n - 5):before {
-  background-color: rgba(116, 92, 46, .82);
+  background: url("../../images/Homepage/Layer-2.png");
+  opacity: 0.749;
+}
+.tiles article:nth-child(6n - 5):hover:before {
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
 
 .tiles article:nth-child(6n - 4):before {
-  background-color: rgba(10, 55, 64, .82);
+  background-color: rgba(18, 104, 188, .82);
 }
 
 .tiles article:nth-child(6n - 3):before {
@@ -2763,7 +2816,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   -webkit-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %239bf1ff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23efbf1b%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
   opacity: 0;
   z-index: 1;
 }
@@ -2925,7 +2978,7 @@ body.is-loading #header.alt {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../images/bg-1.png");
+  background-image: url("../../images/Homepage/Marin_Hero.jpg");
   display: -moz-flex;
   display: -ms-flex;
   display: -webkit-box;
@@ -2960,12 +3013,11 @@ body.is-loading #header.alt {
   -webkit-pointer-events: none;
   -ms-pointer-events: none;
   pointer-events: none;
-  background-color: #3B1E00;
+  background-color: rgba(0, 27, 82, .1);
   content: '';
   display: block;
   height: 100%;
   left: 0;
-  opacity: 0.45;
   position: absolute;
   top: 0;
   width: 100%;
@@ -3345,13 +3397,7 @@ section ul li {
 }
 
 .contact {
-  background: url('../../images/Textures/PENN_Web_FooterImage.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.contact:before {
-  background: rgba(212, 212, 255, 0.1);
+  background: #001b52;
 }
 
 #contact>.inner {
@@ -3639,7 +3685,7 @@ body.is-popup-visible #ToggleAnnouncement {
   -webkit-pointer-events: none;
   -ms-pointer-events: none;
   pointer-events: none;
-  background: rgba(10, 10, 10, 0.8);
+  background: rgba(0, 51, 153, 0.8);
   -webkit-box-shadow: none;
           box-shadow: none;
   height: 100%;
@@ -3683,7 +3729,7 @@ body.is-popup-visible #ToggleAnnouncement {
 }
 
 #menu ul {
-  margin: 0 0 1em 0;
+  margin: 0 0 .2em 0;
 }
 
 #menu ul.links {
@@ -3695,6 +3741,9 @@ body.is-popup-visible #ToggleAnnouncement {
   padding: 0;
 }
 
+.no-btm-border {
+  border-bottom: none !important;
+}
 #menu ul.links>li>a:not(.button) {
   border: 0;
   border-bottom: solid 1px #5a4824;
@@ -3706,13 +3755,24 @@ body.is-popup-visible #ToggleAnnouncement {
   text-decoration: none;
   text-transform: uppercase;
 }
+#menu ul.sub>li>a:not(.button) {
+  border: 0;
+  border-bottom: none;
+  display: block;
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  line-height: 4em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 #menu ul.links>li>a:not(.button):hover {
   border: 0;
-  color: #FFF;
+  color: rgb(242,183,5);
   border-bottom: solid 1px #FFF;
   display: block;
-  font-size: 0.8em;
+  /*font-size: 0.8em;*/
   font-weight: 600;
   letter-spacing: 0.25em;
   line-height: 4em;

@@ -1,12 +1,14 @@
 {
   "name": "marin",
   "version": "1.0.0",
-  "description": "marin dev stie",
+  "description": "marin dev site",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "Hosea Sandstrom - Obviouslee Marketing",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

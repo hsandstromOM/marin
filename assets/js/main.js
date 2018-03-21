@@ -1,9 +1,9 @@
 
 (function($) {
- setTimeout(function(){$('#ToggleAnnouncement').modal('show'); }, 3000);
- $(".modal .fade").click(function(event) {
-   $(".modal .fade").collapse('hide');
- });
+ // setTimeout(function(){$('#ToggleAnnouncement').modal('show'); }, 3000);
+ // $(".modal .fade").click(function(event) {
+ //   $(".modal .fade").collapse('hide');
+ // });
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
