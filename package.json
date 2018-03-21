@@ -1,0 +1,12 @@
+{
+  "name": "marin",
+  "version": "1.0.0",
+  "description": "marin dev stie",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Hosea Sandstrom - Obviouslee Marketing",
+  "license": "ISC"
+}

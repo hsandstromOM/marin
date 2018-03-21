@@ -1,0 +1,58 @@
+button:focus {
+  outline:none;
+}
+.gal {
+  margin: 0;
+  padding: 0;
+  -ms-column-count: 4;
+  -webkit-column-count: 4;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 4;
+  /* Firefox */
+  column-count: 4;
+}
+
+.gal img {
+  width: 100%;
+  padding: 7px 0;
+  margin: 0;
+}
+.gal a {
+  border-bottom: none;
+}
+
+
+@media (max-width: 768px) {
+  .gal {
+    -ms-column-count: 3;
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .gal {
+    -ms-column-count: 1;
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1;
+  }
+}
+
+.tz-gallery .lightbox img {
+    transition: 0.5s ease all;
+}
+
+.tz-gallery .lightbox img:hover {
+  opacity:.7;
+    transition: 0.5s ease all;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
