@@ -1399,11 +1399,13 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1.5em;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 h5 {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 h6 {
@@ -1420,6 +1422,15 @@ h6 {
   h3 {
     font-size: 1.25em;
   }
+}
+
+.f-15 {
+  font-family: minerva-modern, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4em!important;
+  letter-spacing: 2px!important;
+  text-transform: none!important;
 }
 
 sub {
@@ -1509,10 +1520,18 @@ header.major> :first-child:after {
   content: '';
   background-color: #ffffff;
   display: block;
-  height: 2px;
-  margin: 0.325em 0 0.5em 0;
+  height: 1px;
+  margin: 0.1em 0 0.2em 0;
   width: 100%;
 }
+
+
+header.major>h2 {
+  border-bottom-style: solid;
+      border-bottom-color: #fff;
+      border-bottom-width: 5px;
+}
+
 
 header.major>p {
   font-size: 0.7em;
@@ -1801,6 +1820,22 @@ input[type="radio"]+label:before {
   line-height: 2em;
   text-align: center;
   width: 2em;
+  -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color  0.3s ease-in-out;
+    transition: background-color  0.3s ease-in-out;
+}
+a .icon.alt:hover:before {
+  background-color: #efbf1b !important;
+  border-radius: 100%;
+  color: #242943;
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 2em;
+  -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color  0.3s ease-in-out;
+    transition: background-color  0.3s ease-in-out;
 }
 
 a.icon.alt:before {
@@ -2439,7 +2474,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 }
 
 .tiles article:after {
-  background-color: rgba(36, 41, 67, 0.25);
+  /*background-color: rgba(36, 41, 67, 0.25);*/
   content: '';
   display: block;
   height: 100%;
@@ -2494,7 +2529,16 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   /*background-color: rgba(66, 66, 66, .82);*/
 }
 
+.tiles article:nth-child(6n - 1) {
+  width:100%;
+}
+
+.major ul.actions li:last-child {
+  margin: 1em 0;
+}
+
 .tiles article:nth-child(6n - 1):before {
+    background-color: #003399;
 }
 
 .tiles article:nth-child(6n):before {
@@ -2551,8 +2595,20 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   top: 0;
 }
 
-.contact-method h3 {
+.contact-method h5 {
   margin: 0 0 0.5em 0;
+  text-transform: none;
+  letter-spacing:normal
+}
+
+.contact-method li {
+  border:none!important;
+  margin:.5em;
+}
+
+.contact-method li:hover {
+  border:none!important;
+  margin:.5em;
 }
 
 /* Spotlights */
