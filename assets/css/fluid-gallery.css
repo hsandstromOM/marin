@@ -22,7 +22,7 @@ button:focus {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .gal {
     -ms-column-count: 3;
     -webkit-column-count: 3;
@@ -43,6 +43,9 @@ button:focus {
     column-count: 1;
   }
 }
+.tz-gallery {
+  padding-top:15px;
+}
 
 .tz-gallery .lightbox img {
     transition: 0.5s ease all;
@@ -52,7 +55,10 @@ button:focus {
   opacity:.7;
     transition: 0.5s ease all;
 }
-
+.baguetteBox-button#close-button {
+  box-shadow: none!important;
+}
 .baguetteBox-button {
   background-color: transparent !important;
+  box-shadow: none!important;
 }

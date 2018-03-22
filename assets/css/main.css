@@ -2316,7 +2316,7 @@ input[type="submit"].next:hover:after, input[type="submit"].next:active:after, i
 
 @media screen and (max-width: 1280px) {
   input[type="submit"].next, input[type="reset"].next, input[type="button"].next, button.next, .button.next {
-    padding-right: 5em;
+    /*padding-right: 5em;*/
   }
 }
 
@@ -2324,12 +2324,16 @@ input[type="submit"].special, input[type="reset"].special, input[type="button"].
   background-color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #242943;
+  color: #001b52;
+  margin:.45em !important;
+  min-width: 100%;
+  width: 100%;
 }
 
-input[type="submit"].special:hover, input[type="submit"].special:active, input[type="reset"].special:hover, input[type="reset"].special:active, input[type="button"].special:hover, input[type="button"].special:active, button.special:hover, button.special:active, .button.special:hover, .button.special:active {
-  background-color: #9bf1ff;
-  color: #242943 !important;
+input[type="submit"].special:hover, input[type="submit"].special:active, input[type="reset"].special:hover, input[type="reset"].special:active, input[type="button"].special:hover, input[type="button"].special:active, button.special:hover, button.special:active,
+.button.special:hover, .button.special:active {
+  background-color: #e0b624;;
+  color: #FFF !important;
 }
 
 input[type="submit"].special:active, input[type="reset"].special:active, input[type="button"].special:active, button.special:active, .button.special:active {
@@ -2343,6 +2347,10 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   pointer-events: none;
   cursor: default;
   opacity: 0.25;
+}
+
+.thin {
+  border:none!important;
 }
 
 /* Tiles */
