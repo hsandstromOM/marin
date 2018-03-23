@@ -3444,6 +3444,38 @@ body.is-loading #banner>.inner {
 	height: .75em;
   width: 100%;
 }
+.module {
+  text-align: center;
+  height: 40px;
+  background: none;
+  position: relative;
+  border: 2px solid white;
+  margin: 20px;
+}
+.module:before {
+  content: '';
+  position: absolute;
+  border: 5px solid white;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: none;
+  z-index: -1;
+}
+#outside-border-pets {
+  border: 5px solid white;
+  margin-right: .5em;
+  /*padding: .2em 1.5em;*/
+  /*background: #FFF;*/
+  width:100%;
+  height: auto;
+  color:#FFF;
+  background-clip: padding-box;
+  -webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
 #outside-border {
   border: 5px solid white;
   margin: 0 1em;
@@ -3471,18 +3503,18 @@ transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
 section ul li {
-  /*margin:1.0em;
+  margin:1.0em;
   border: 5px solid #FFF;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;*/
+  transition: color 0.3s ease-in-out;
 }
 section ul li:hover {
-  /*-webkit-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
   margin:1.0em;
-  border: 5px solid #e0b624;*/
+  border: 5px solid #e0b624;
 }
 
 /* Main */
