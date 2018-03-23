@@ -83,7 +83,10 @@ a:hover {
   color: #efbf1b;
   transition: all 0.3s ease;
 }
-
+#white, #white h3 {
+  background: #FFF;
+  color:#003399;
+}
 /* Grid */
 
 .row {
@@ -2236,6 +2239,7 @@ table.alt tfoot {
 }
 .m-fix {
   margin-left: .7em!important;
+  font-size: 1.2em;
 }
 
 input[type="submit"], input[type="reset"], input[type="button"], button, .button {
@@ -3284,10 +3288,10 @@ body.is-loading #banner>.inner {
 }
 
 #amenities #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
+	   /*background-color: rgba(10, 55, 64, .82);*/
 }
 #amenities header.major> :first-child:before {
-  content: '';
+  /*content: '';
 	background-image: url("../../images/Starburst.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -3295,20 +3299,20 @@ body.is-loading #banner>.inner {
 	display: block;
 	margin-left: -42%;
 	height: .75em;
-  width: 100%;
+  width: 100%;*/
 }
 
 /* Apartments */
 
 #apartments #banner {
-	  background-image: url("../../images/Apartments/PENN_Web_Apts-Header.jpg");
+	  background-image: url("../../images/Apartments/Apartments_banner.jpg");
 }
 
 #apartments  #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
+	   /*background-color: rgba(10, 55, 64, .82);*/
 }
 #apartments header.major> :first-child:before {
-  content: '';
+  /*content: '';
 	background-image: url("../../images/Starburst.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -3316,12 +3320,9 @@ body.is-loading #banner>.inner {
 	display: block;
 	margin-left: -42%;
 	height: .75em;
-  width: 100%;
+  width: 100%;*/
 }
 
-#apartments .gold {
-  background: url(../../images/Textures/PENN_Web_GoldMarble.jpg)
-}
 
 /* Gallery */
 
@@ -3334,7 +3335,7 @@ body.is-loading #banner>.inner {
 }
 
 #gallery #main {
-	  background-color: rgba(66, 66, 66, .82);
+	  /*background-color: #001b52;*/
 }
 
 /* Resident Portal */
@@ -3347,7 +3348,7 @@ body.is-loading #banner>.inner {
 	   background-color: rgba(10, 55, 64, .82);
 }
 #resident header.major> :first-child:before {
-  content: '';
+  /*content: '';
 	background-image: url("../../images/Starburst.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -3355,14 +3356,14 @@ body.is-loading #banner>.inner {
 	display: block;
 	margin-left: -47%;
 	height: .75em;
-  width: 100%;
+  width: 100%;*/
 }
 #resident #main {
-	  background-color: #fff;
-    color:#000;
+	  /*background-color: #fff;*/
+    /*color:#000;*/
 }
 #resident #main h2, #resident #main strong  {
-    color:#000;
+    /*color:#000;*/
 }
 
 /* Pets */
@@ -3422,8 +3423,8 @@ body.is-loading #banner>.inner {
 }
 
 #leasing #main {
-	  background-color: #fff;
-    color:#000;
+	  /*background-color: #fff;
+    color:#000;*/
 }
 #leasing #main h2, #leasing #main strong  {
     color:#000;
@@ -3502,25 +3503,43 @@ transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
-section ul li {
+#home section ul li {
   margin:1.0em;
   border: 5px solid #FFF;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-section ul li:hover {
+#home section ul li:hover {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
   margin:1.0em;
   border: 5px solid #e0b624;
 }
+#button-outline ul li {
+  margin:1.0em;
+  border: 5px solid #FFF;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+#button-outline ul li:hover {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  margin:1.0em;
+  border: 5px solid #e0b624;
+}
+#contact section ul li, #contact section ul li:hover  {
+  margin:0;
+  border: none;
+}
 
 /* Main */
 
 #main {
-  background-color: #001b52;
+  /*background-color: #001b52;*/
 }
 
 #main>* {
