@@ -83,9 +83,12 @@ a:hover {
   color: #efbf1b;
   transition: all 0.3s ease;
 }
-#white,#white h2, #white h3 {
+#white,#white h2, #white h3, #white h4 {
   background: #FFF;
   color:#003399;
+}
+#white h4 {
+  text-transform: none;
 }
 #blue1 {
   background: url(../../images/Amenities/blue_bg_1.jpg);
@@ -3403,14 +3406,14 @@ body.is-loading #banner>.inner {
 /* Neighborhood */
 
 #neighborhood #banner {
-	  background-image: url("../../images/Neighborhood/PENN_Web_Neighborhood-Header.jpg");
+	  background-image: url("../../images/Neighborhood/Neighborhood_banner.jpg");
 }
 
 #neighborhood  #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
+	   /*background-color: rgba(10, 55, 64, .82);*/
 }
 #neighborhood header.major> :first-child:before {
-  content: '';
+  /*content: '';
 	background-image: url("../../images/Starburst.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -3418,12 +3421,9 @@ body.is-loading #banner>.inner {
 	display: block;
 	margin-left: -47%;
 	height: .75em;
-  width: 100%;
+  width: 100%;*/
 }
 
-#neighborhood .gold {
-  background: url(../../images/Textures/PENN_Web_GoldMarble.jpg)
-}
 
 /* Leasing */
 
