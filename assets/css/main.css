@@ -83,10 +83,23 @@ a:hover {
   color: #efbf1b;
   transition: all 0.3s ease;
 }
-#white, #white h3 {
+#white,#white h2, #white h3 {
   background: #FFF;
   color:#003399;
 }
+#blue1 {
+  background: url(../../images/Amenities/blue_bg_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#blue2 {
+  background: url(../../images/Amenities/blue_bg_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Grid */
 
 .row {
@@ -3098,7 +3111,7 @@ body.is-loading #header.alt {
   top: -3.25em;
 }
 #amenities #banner {
-	  background-image: url("../../images/Amenities/PENN_Web_Amen-Header.jpg");
+	  background-image: url("../../images/Amenities/Amenities_banner.jpg");
 }
 
 #banner:after {
@@ -3123,7 +3136,7 @@ body.is-loading #header.alt {
   z-index: 1;
 }
 #amenities #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
+	   /*background-color: rgba(10, 55, 64, .82);*/
 }
 
 #banner h1 {
@@ -3284,7 +3297,7 @@ body.is-loading #banner>.inner {
 /* Amenities */
 
 #amenities #banner {
-	  background-image: url("../../images/Amenities/PENN_Web_Amen-Header.jpg");
+	  background-image: url("../../images/Amenities/Amenities_banner.jpg");
 }
 
 #amenities #banner:after {
