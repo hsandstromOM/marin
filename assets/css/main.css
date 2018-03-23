@@ -3255,7 +3255,7 @@ body.is-loading #banner>.inner {
 
 @media screen and (max-width: 1280px) {
   #banner {
-    /*background-attachment: scroll;*/
+    background-attachment: scroll;
   }
 }
 
@@ -3357,29 +3357,10 @@ body.is-loading #banner>.inner {
 /* Resident Portal */
 
 #resident #banner {
-	  background-image: url("../../images/Leasing/PENN_Web_Leasing-Header.jpg");
+	  background-image: url("../../images/Resident-Portal/Resident_Portal_banner.jpg");
 }
-
-#resident  #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
-}
-#resident header.major> :first-child:before {
-  /*content: '';
-	background-image: url("../../images/Starburst.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	display: block;
-	margin-left: -47%;
-	height: .75em;
-  width: 100%;*/
-}
-#resident #main {
-	  /*background-color: #fff;*/
-    /*color:#000;*/
-}
-#resident #main h2, #resident #main strong  {
-    /*color:#000;*/
+#resident #one, #resident #white  {
+  min-height: 20vh;
 }
 
 /* Pets */
