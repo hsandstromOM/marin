@@ -3023,7 +3023,7 @@ body.is-loading #header.alt {
   }
   #header .logo {
     padding: 0 1em;
-		margin-top: -15px;
+		/* margin-top: -15px; */
   }
   #header nav a {
     padding: 0 0.5em;
@@ -3138,12 +3138,9 @@ body.is-loading #header.alt {
   width: 100%;
   z-index: 1;
 }
-#amenities #banner:after {
-	   /*background-color: rgba(10, 55, 64, .82);*/
-}
+
 
 #banner h1 {
-  /* font-size: 3.25em; */
   letter-spacing: 4px;
   font-weight: 400;
 }
@@ -3166,6 +3163,7 @@ body.is-loading #header.alt {
 
 #banner>.inner header> :first-child {
   width: auto;
+  line-height: 1.1;
 }
 
 #banner>.inner header> :first-child:after {
@@ -3308,6 +3306,15 @@ body.is-loading #banner>.inner {
 #apartments #banner {
 	  background-image: url("../../images/Apartments/Apartments_banner.jpg");
 }
+#tiled {
+	  background-image: url("../../images/Group-3.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tiled .major h2, #tiled .major h3 {
+	  background: none;
+}
 
 /* Resident Portal */
 
@@ -3392,56 +3399,17 @@ body.is-loading #banner>.inner {
   background: none;
   z-index: -1;
 }
-#outside-border-pets {
-  border: 5px solid white;
-  margin-right: .5em;
-  /*padding: .2em 1.5em;*/
-  /*background: #FFF;*/
-  width:100%;
-  height: auto;
-  color:#FFF;
-  background-clip: padding-box;
-  -webkit-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-}
-#outside-border {
-  border: 5px solid white;
-  margin: 0 1em;
-  padding: .5em;
-  background: #FFF;
-  width:100%;
-  height: auto;
-  color:#001b52;
-  background-clip: content-box;
-  -webkit-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-}
-#outside-border:hover {
-  border: 5px solid white;
-  padding: .5em;
-  background: #001b52;
-  width:100%;
-  height: auto;
-  color:#FFF;
-  background-clip: padding-box;
-  box-shadow: none!important;
-  -webkit-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-}
 #home section ul li, #blue2  ul li {
   margin:1.0em;
   border: 5px solid #FFF;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay:0.1s;
+  transition-delay: 0.1s;
 }
 #home section ul li:hover, #blue2  ul li:hover  {
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay:0.1s;
+  transition-delay: 0.1s;
   margin:1.0em;
   border: 5px solid #e0b624;
 }
@@ -3468,19 +3436,47 @@ transition: all 0.3s ease-in-out;
 #blue2 a.button.next:hover:after {
     border-color: none;
 }
+#button-outline {
+  background: url(../../images/Amenities/blue_bg_1.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 #button-outline ul li {
   margin:1.0em;
   border: 5px solid #FFF;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay:0.1s;
+  transition-delay: 0.1s;
 }
 #button-outline ul li:hover {
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay:0.1s;
+  transition-delay: 0.1s;
   margin:1.0em;
   border: 5px solid #e0b624;
+}
+#button-outline ul li a.button.next {
+  padding-right:2em;
+}
+
+#button-outline ul li a.button.next:before {
+  display: block;
+  content: "";
+  background: none;
+}
+
+#button-outline ul li a.button.next:hover:before {
+  background: none;
+}
+
+#button-outline ul li a.button.next:after {
+  content: "";
+  border: none;
+}
+
+#button-outline a.button.next:hover:after {
+    border-color: none;
 }
 #contact section ul li, #contact section ul li:hover  {
   margin:0;
@@ -3512,6 +3508,10 @@ transition: all 0.3s ease-in-out;
   #main>*>.inner {
     padding: 3em 0 1em 0;
     width: calc(100% - 3em);
+  }
+  #leasing #main button {
+    max-width: 100vw;
+    width:100%;
   }
 }
 
@@ -3575,6 +3575,32 @@ transition: all 0.3s ease-in-out;
 
 #contact>.inner>.split> :first-child:before {
   display: none;
+}
+#contact a.yellow-font {
+  color: #efbf1b !important;
+  position: relative;
+}
+#contact a.yellow-font:hover {
+  color: #FFF !important;
+}
+#contact a.yellow-font:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #efbf1b;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#contact a.yellow-font:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 @media screen and (max-width: 980px) {
