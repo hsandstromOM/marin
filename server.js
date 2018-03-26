@@ -30,7 +30,7 @@ app.get('/gallery', function(req, res) {
     res.sendFile(path.join(__dirname + '/gallery.html'));
 });
 
-app.get('/leasing', function(req, res) {
+app.get('/leasing-info', function(req, res) {
     res.sendFile(path.join(__dirname + '/leasing.html'));
 });
 

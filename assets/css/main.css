@@ -3409,26 +3409,58 @@ body.is-loading #banner>.inner {
 /* Leasing */
 
 #leasing #banner {
-	  background-image: url("../../images/Leasing/PENN_Web_Leasing-Header.jpg");
+	  background-image: none;
 }
+
 
 #leasing  #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
+	   background-color: #003399;
+}
+#leasing  #banner.major {
+  /*height: 75vh;*/
+  min-height: 12.5em;
+  max-height: 12.5em;
+  opacity: 1;
 }
 
+
 #leasing #main {
-	  /*background-color: #fff;
-    color:#000;*/
+  background-image: url(../../images/Group-6.jpg);
+  background-repeat: no-repeat;
+   background-position:  right;
+	  background-color: #fff;
+    color:#003399;
 }
-#leasing #main h2, #leasing #main strong  {
-    color:#000;
+#leasing #main h2, #leasing #main h5, #leasing #main strong  {
+    color:#003399;
 }
 #leasing #main p  {
     font-weight: 400;
 }
+#leasing #main button {
+    background-color: #003399;
+    color:#FFF;
+    max-width: 50vw;
+    width:100%;
+    height:auto;
+    border:none;
+    box-shadow: none;
+    margin-bottom: 2em;
+}
+#leasing #main button h5{
+    margin:0 auto;
+    color:#FFF;
+    width:100%;
+    border:none;
+    box-shadow: none;
+    padding: 20px;
+}
+#leasing #main button .fa{
+    margin:0 .25em;
+}
 
 
-#leasing header.major> :first-child:before {
+/* #leasing header.major> :first-child:before {
   content: '';
 	background-image: url("../../images/Starburst.png");
 	background-repeat: no-repeat;
@@ -3438,7 +3470,7 @@ body.is-loading #banner>.inner {
 	margin-left: -42%;
 	height: .75em;
   width: 100%;
-}
+} */
 .module {
   text-align: center;
   height: 40px;
