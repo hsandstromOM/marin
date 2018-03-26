@@ -84,7 +84,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 #white,#white h2, #white h3, #white h4 {
-  background: #FFF;
+  /* background: #FFF; */
   color:#003399;
 }
 #white h4 {
@@ -101,6 +101,13 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#leasing #main>*>.inner {
+  padding: 4em 0 2em 0;
+  margin: 0 auto;
+  margin-left: 4em;
+  max-width: 50em;
+  width: calc(100% - 6em);
 }
 
 /* Grid */
@@ -3503,6 +3510,126 @@ body.is-loading #banner>.inner {
   max-width: 65em;
   width: calc(100% - 6em);
 }
+.tiles h2 a.double {
+  color: #FFF;
+  position: relative;
+}
+.tiles h2 a.double:hover {
+  color: #efbf1b;
+}
+.tiles h2 a.double:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.tiles h2 a.double:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #efbf1b;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.tiles h2 a.double:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  height: 5px;
+  left: 0;
+  background-color: #FFF;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.tiles h2 a.double:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  height: 5px;
+  left: 0;
+  background-color: #efbf1b;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.double {
+  color: #FFF;
+  position: relative;
+}
+.double:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #003399;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.double:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  height: 5px;
+  left: 0;
+  background-color: #003399;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.single {
+  color: #FFF;
+  position: relative;
+}
+.single:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
 
 @media screen and (max-width: 736px) {
   #main>*>.inner {
@@ -3588,7 +3715,7 @@ body.is-loading #banner>.inner {
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   background-color: #efbf1b;
   visibility: hidden;
