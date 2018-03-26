@@ -2675,7 +2675,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  background: url(../../images/Textures/PENN_Web_GreyMarble.jpg)
+
 }
 
 .spotlights>section>.image {
@@ -3406,14 +3406,14 @@ body.is-loading #banner>.inner {
   background: none;
   z-index: -1;
 }
-#home section ul li, #blue2  ul li {
+#home #banner ul li {
   margin:1.0em;
   border: 5px solid #FFF;
   -webkit-transition-delay: 0.1s;
   -o-transition-delay:0.1s;
   transition-delay: 0.1s;
 }
-#home section ul li:hover, #blue2  ul li:hover  {
+#home #banner ul li:hover {
   -webkit-transition-delay: 0.1s;
   -o-transition-delay:0.1s;
   transition-delay: 0.1s;
@@ -3449,7 +3449,7 @@ body.is-loading #banner>.inner {
  background-repeat: no-repeat;
  background-size: cover;
 }
-#button-outline ul li {
+/* #button-outline ul li {
   margin:1.0em;
   border: 5px solid #FFF;
   -webkit-transition-delay: 0.1s;
@@ -3462,9 +3462,10 @@ body.is-loading #banner>.inner {
   transition-delay: 0.1s;
   margin:1.0em;
   border: 5px solid #e0b624;
-}
+} */
 #button-outline ul li a.button.next {
   padding-right:2em;
+  margin:0;
 }
 
 #button-outline ul li a.button.next:before {
@@ -3606,6 +3607,38 @@ body.is-loading #banner>.inner {
   height: 5px;
   left: 0;
   background-color: #003399;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.double-white {
+  color: #FFF;
+  position: relative;
+}
+.double-white:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.double-white:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  height: 5px;
+  left: 0;
+  background-color: #FFF;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
