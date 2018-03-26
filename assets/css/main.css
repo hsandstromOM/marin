@@ -3303,55 +3303,10 @@ body.is-loading #banner>.inner {
 	  background-image: url("../../images/Amenities/Amenities_banner.jpg");
 }
 
-#amenities #banner:after {
-	   /*background-color: rgba(10, 55, 64, .82);*/
-}
-#amenities header.major> :first-child:before {
-  /*content: '';
-	background-image: url("../../images/Starburst.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	display: block;
-	margin-left: -42%;
-	height: .75em;
-  width: 100%;*/
-}
-
 /* Apartments */
 
 #apartments #banner {
 	  background-image: url("../../images/Apartments/Apartments_banner.jpg");
-}
-
-#apartments  #banner:after {
-	   /*background-color: rgba(10, 55, 64, .82);*/
-}
-#apartments header.major> :first-child:before {
-  /*content: '';
-	background-image: url("../../images/Starburst.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	display: block;
-	margin-left: -42%;
-	height: .75em;
-  width: 100%;*/
-}
-
-
-/* Gallery */
-
-#gallery #banner {
-	  background-image: url("../../images/PenatBuckheadHR-8.jpg");
-}
-
-#gallery  #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
-}
-
-#gallery #main {
-	  /*background-color: #001b52;*/
 }
 
 /* Resident Portal */
@@ -3363,56 +3318,17 @@ body.is-loading #banner>.inner {
   min-height: 20vh;
 }
 
-/* Pets */
-
-#pets #banner {
-	  background-image: url("../../images/Pets/PENN_Web_Pets-Header.jpg");
-}
-
-#pets  #banner:after {
-	   background-color: rgba(10, 55, 64, .82);
-}
-#pets header.major> :first-child:before {
-  content: '';
-	background-image: url("../../images/Starburst.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	display: block;
-	margin-left: -47%;
-	height: .75em;
-  width: 100%;
-}
-
 /* Neighborhood */
 
 #neighborhood #banner {
 	  background-image: url("../../images/Neighborhood/Neighborhood_banner.jpg");
 }
 
-#neighborhood  #banner:after {
-	   /*background-color: rgba(10, 55, 64, .82);*/
-}
-#neighborhood header.major> :first-child:before {
-  /*content: '';
-	background-image: url("../../images/Starburst.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	display: block;
-	margin-left: -47%;
-	height: .75em;
-  width: 100%;*/
-}
-
-
 /* Leasing */
 
 #leasing #banner {
 	  background-image: none;
 }
-
-
 #leasing  #banner:after {
 	   background-color: #003399;
 }
@@ -3422,8 +3338,6 @@ body.is-loading #banner>.inner {
   max-height: 12.5em;
   opacity: 1;
 }
-
-
 #leasing #main {
   background-image: url(../../images/Group-6.jpg);
   background-repeat: no-repeat;
@@ -3459,18 +3373,6 @@ body.is-loading #banner>.inner {
     margin:0 .25em;
 }
 
-
-/* #leasing header.major> :first-child:before {
-  content: '';
-	background-image: url("../../images/Starburst.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	display: block;
-	margin-left: -42%;
-	height: .75em;
-  width: 100%;
-} */
 .module {
   text-align: center;
   height: 40px;
@@ -3529,19 +3431,42 @@ transition: all 0.3s ease-in-out;
 -o-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
-#home section ul li {
+#home section ul li, #blue2  ul li {
   margin:1.0em;
   border: 5px solid #FFF;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-#home section ul li:hover {
+#home section ul li:hover, #blue2  ul li:hover  {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
   margin:1.0em;
   border: 5px solid #e0b624;
+}
+
+#blue2 ul li a.button.next {
+  padding-right:2em;
+}
+
+#blue2 ul li a.button.next:before {
+  display: block;
+  content: "";
+  background: none;
+}
+
+#blue2 ul li a.button.next:hover:before {
+  background: none;
+}
+
+#blue2 ul li a.button.next:after {
+  content: "";
+  border: none;
+}
+
+#blue2 a.button.next:hover:after {
+    border-color: none;
 }
 #button-outline ul li {
   margin:1.0em;
